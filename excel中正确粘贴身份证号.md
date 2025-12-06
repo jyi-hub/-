@@ -3,10 +3,14 @@
 ## 问题描述  
 在复制一串身份证号后，如果直接粘贴到excel中，会出现这样的问题：  
 
-![alt text](image-3.png)  
+
+<img width="81" height="300" alt="image" src="https://github.com/user-attachments/assets/a56e1f75-9e91-440d-9d60-ad25077a5509" />
+
 但是我们期望得到：  
 
-![alt text](image-4.png)
+
+<img width="185" height="300" alt="image" src="https://github.com/user-attachments/assets/1e75915f-9e3c-47b8-9b87-e9f7a0a6d315" />
+
 
 ## 原因解释  
 直接粘贴到excel中导致由于格式问题（excel将所有内容当作数字处理了），又因为身份证号比较长，所以直接使用了科学计数法表示如：6.20E+17，所以我们需要先把要粘贴内容的表格区域的格式修改成**文本**，再粘贴，同时选择粘贴方式**匹配目标格式**，即可完成
@@ -15,12 +19,13 @@
 
 现在我需要将这些身份证号粘到excel中
 
-![alt text](image-5.png)  
+![](./images/屏幕截图%202025-12-06%20152954.png)
 
 假设我要粘贴到`B列`，于是我选中B列，将单元格格式改成文本
 
-![alt text](image-6.png)
+![](./images/屏幕截图%202025-12-06%20153253.png)
 
 最后我将身份证号复制粘贴到B列，同时选择粘贴方式**匹配目标格式**
 
-![alt text](image-7.png)
+![](./images/屏幕截图%202025-12-06%20153417.png)
+
